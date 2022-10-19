@@ -8387,7 +8387,7 @@ not_escape:
 
   dstack = save_dstack;
 
-  char* osp_buffer = malloc(sizeof(char) * 1024);
+  char* osp_buffer = malloc(sizeof(char) * (strlen(result) + 31)); // Remember to update when changing the prompt prefix
 
   sprintf(osp_buffer, "Operating Systems Principles: %s", result);
 
