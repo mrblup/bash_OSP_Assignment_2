@@ -2065,7 +2065,7 @@ show_shell_usage (fp, extra)
   char *set_opts, *s, *t;
 
   if (extra)
-    fprintf (fp, _("GNU bash, version %s-(%s)\n"), shell_version_string (), MACHTYPE);
+    f printf (fp, _("GNU bash, version %s-(%s)\n"), shell_version_string (), MACHTYPE);
   fprintf (fp, _("Usage:\t%s [GNU long option] [option] ...\n\t%s [GNU long option] [option] script-file ...\n"),
 	     shell_name, shell_name);
   fputs (_("GNU long options:\n"), fp);
@@ -2098,12 +2098,15 @@ show_shell_usage (fp, extra)
 
   if (extra)
     {
-      fprintf (fp, _("Type `%s -c \"help set\"' for more information about shell options.\n"), shell_name);
-      fprintf (fp, _("Type `%s -c help' for more information about shell builtin commands.\n"), shell_name);
-      fprintf (fp, _("Use the `bashbug' command to report bugs.\n"));
-      fprintf (fp, "\n");
-      fprintf (fp, _("bash home page: <http://www.gnu.org/software/bash>\n"));
-      fprintf (fp, _("General help using GNU software: <http://www.gnu.org/gethelp/>\n"));
+      // fprintf (fp, _("Type `%s -c \"help set\"' for more information about shell options.\n"), shell_name);
+      // fprintf (fp, _("Type `%s -c help' for more information about shell builtin commands.\n"), shell_name);
+      // fprintf (fp, _("Use the `bashbug' command to report bugs.\n"));
+      // fprintf (fp, "\n");
+      // fprintf (fp, _("bash home page: <http://www.gnu.org/software/bash>\n"));
+      // fprintf (fp, _("General help using GNU software: <http://www.gnu.org/gethelp/>\n"));
+
+      
+      fprintf (fp, _("OSP\n"));
     }
 }
 
