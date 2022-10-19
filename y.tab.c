@@ -8387,7 +8387,13 @@ not_escape:
 
   dstack = save_dstack;
 
-  return (result);
+  char* osp_buffer = malloc(sizeof(char) * 1024);
+
+  sprintf(osp_buffer, "Operating Systems Principles: %s", result);
+
+  free(result);
+
+  return (osp_buffer);
 }
 
 /************************************************
